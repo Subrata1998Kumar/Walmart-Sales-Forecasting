@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Select Store and Date</h1>
+    <form id="salesForm">
+        <div class="form-group">
+            <label for="store">Store:</label>
+            <select id="store" name="store" class="form-control">
+                <option value="">Select Store</option>
+                {% for store in stores %}
+                    <option value="{{ store }}">{{ store }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <select id="date" name="date" class="form-control">
+                <option value="">Select Date</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+    <h2>Sales Value</h2>
+    <div id="salesValue"></div>
+</div>
+{% endblock %}
+    

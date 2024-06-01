@@ -1,0 +1,52 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+.taskbar {
+    padding: 10px 0;
+}
+.navbar {
+    background-color: #6c757d;
+}
+.navbar-brand, .nav-link {
+    font-weight: bold;
+    color: #ffffff !important;
+}
+.navbar-brand:hover {
+    color: #ffc107 !important;
+} 
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1, h2 {
+    text-align: center;
+}
+#salesForm {
+    margin-top: 20px;
+}
+#salesForm label {
+    font-weight: bold;
+}
+#salesForm select, #salesForm button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+#salesValue {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}

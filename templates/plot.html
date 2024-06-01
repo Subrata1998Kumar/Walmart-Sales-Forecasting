@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container">
+<h1>Weekly Sales Forecast per Store</h1>
+<div>
+    {{ graph_html | safe }}
+</div>
+</div>
+{% endblock %}
